@@ -13,10 +13,10 @@ import pandas as pd
 url = 'https://super.walmart.com.mx/all-departments'
 
 # Agregamos la información adicional de headers para obtener acceso al sitio
-headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299'}
+header = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299'}
 
 # Hacemos la petición
-response = requests.get(url, headers=headers)
+response = requests.get(url, headers=header)
 
 # Obtenemos el contenido html
 soup = bs(response.text, 'html.parser')
