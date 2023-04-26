@@ -24,8 +24,8 @@
 Al ejecutar las siguiente líneas de código
 
 ```python
-url = 'https://super.walmart.com.mx/all-departments'
-response = requests.get(url)
+url_all = 'https://super.walmart.com.mx/all-departments'
+response = requests.get(url_all)
 soup = bs(response.text, 'html.parser')
 ```
 se obtiene la siguiente respuesta:
@@ -47,9 +47,9 @@ La cual se puede deber a una restricción de seguiridad de acceso al contenido p
 Al buscar información en foros de ayuda  ([StackOverflow](https://stackoverflow.com/questions/62422172/error-you-dont-have-permission-to-access-url-on-this-server-in-beautiful-so)), encontré que se puede solucionar agregando un diccionario con información adicional como el `User-Agent` en el parámetro `headers` de la petición del `requests.get()`:
 
 ```python
-url = 'https://super.walmart.com.mx/all-departments'
+url_all = 'https://super.walmart.com.mx/all-departments'
 header = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299'}
-response = requests.get(url, headers=header)
+response = requests.get(url_all, headers=header)
 soup = bs(response.text, 'html.parser')
 ```
 
@@ -69,7 +69,8 @@ for div in divs:
     ul = div.find('ul', {'class': 'pt2 pl0 list'})
     lis = ul.find_all('li', {'class': 'pv1 pv0-m'})
     lis_text = [li.text.strip() for li in lis]
-    result[h2] = lis_text
+    href = ul.find('a').get('href')
+    result[h2] = {'url': url+href, 'Productos': lis_text}
 ```
 
 Se imprime la variable `result` en la linea de comandos y se genera el archivo `JSON` con la función `dump()` de la librería `json`:
