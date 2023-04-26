@@ -85,27 +85,30 @@ Al final se obtiene la información estructurada en el archivo `output.json`:
 
 ```json
 {
-    "Abarrotes": [
-        "Café, té y sustitutos",
-        "Pan y Tortillas Empacados",
-        "Cereales y Barras",
-        "Galletas",
-        "Enlatados y Conservas",
-        ...
-
-    ],
-    "Lácteos": [
-        "Leche",
-        "Yogurt",
-        "Gelatinas y Postres",
-        ...
-    ],
-    "Frutas y Verduras": [
-        "Frutas",
-        "Verduras",
-        "Orgánicos y Superfoods"
-        ...
-    ],
+    "Abarrotes": {
+        "url": "https://super.walmart.com.mx/content/abarrotes/cafe-te-y-sustitutos/120005_120070",
+        "Productos": [
+            "Café, té y sustitutos",
+            "Pan y Tortillas Empacados",
+            "Cereales y Barras",
+            "Galletas",
+            "Enlatados y Conservas",
+            "Leche",
+            "Azúcar y Postres",
+            ...
+        ]
+    },
+    "Lácteos": {
+        "url": "https://super.walmart.com.mx/content/lacteos/leche/120006_120096",
+        "Productos": [
+            "Leche",
+            "Yogurt",
+            "Gelatinas y Postres",
+            "Mantequilla y margarina",
+            "Huevo",
+            ...
+        ]
+    },
     ...
     etc
 }
