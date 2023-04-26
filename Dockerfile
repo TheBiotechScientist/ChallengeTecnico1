@@ -1,5 +1,5 @@
 # Imagen base de Python
-FROM python:3.11.3
+FROM python:3.10
 
 # Directorio del contenedor
 WORKDIR /app
