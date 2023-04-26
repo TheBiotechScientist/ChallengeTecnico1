@@ -7,6 +7,7 @@
 from bs4 import BeautifulSoup as bs
 import requests
 import json
+import pandas as pd
 
 # Asiganmos la url del sitio
 url = 'https://super.walmart.com.mx/all-departments'
@@ -32,6 +33,9 @@ for div in divs:
     lis = ul.find_all('li', {'class': 'pv1 pv0-m'})
     lis_text = [li.text.strip() for li in lis]
     result[h2] = lis_text
+
+# Opcional para ver en Jupyter Notebook
+# df = pd.DataFrame.from_dict(result, orient='index').transpose()
 
 print(result)
 
