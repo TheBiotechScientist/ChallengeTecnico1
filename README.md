@@ -1,4 +1,4 @@
-# Challenge Técnico #1
+# Reporte Challenge Técnico #1
 ## Web Scraping con Python y BeautifulSoup
 
 #### F. Javier Morales M.
