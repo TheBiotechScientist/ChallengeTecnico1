@@ -1,8 +1,12 @@
-# F. Javier Morales
+# F. Javier Morales M.
 # 26/04/2023
+# Windows 10 Pro x64 21H2
+# conda 4.11.0
 # Python 3.11.3
-# Windows 10
 # Atom Editor 1.55.0
+# Docker Desktop 4.18.0
+# git version 2.30.1.windows.1
+
 
 from bs4 import BeautifulSoup as bs
 import requests
