@@ -1,7 +1,18 @@
 # Challenge Técnico #1
 ## Web Scraping con Python y BeautifulSoup
 
+#### F. Javier Morales M.
+
 #### Sitio: https://super.walmart.com.mx/all-departments
+
+## Sistema y herramientas
+- **Windows 10** Pro x64 21H2
+- **Anaconda3** - conda 4.11.0
+- **Python 3.11.3** en ambiente virtual (conda env)
+- **Atom** Editor 1.55.0
+- **Docker Desktop** 4.18.0
+- **git** version 2.30.1.windows.1
+- **GitHub**
 
 ## Librerías utilizadas
 - `Requests`: Para el acceso al sitio web.
@@ -31,9 +42,9 @@ Reference #18.8fb53b17.1682492087.16873dff
 </html>
 ```
 
-La cual se puede deber por una restricción de seguiridad del acceso al contenido por parte del sitio.
+La cual se puede deber a una restricción de seguiridad de acceso al contenido por parte del sitio.
 
-Al buscar información en foros de ayuda encontré que se puede solucionar agregando un diccionario con información adicional como el `User-Agent` en el parámetro `headers` de la petición del `requests.get()`:
+Al buscar información en foros de ayuda  ([StackOverflow](https://stackoverflow.com/questions/62422172/error-you-dont-have-permission-to-access-url-on-this-server-in-beautiful-so)), encontré que se puede solucionar agregando un diccionario con información adicional como el `User-Agent` en el parámetro `headers` de la petición del `requests.get()`:
 
 ```python
 url = 'https://super.walmart.com.mx/all-departments'
@@ -93,10 +104,62 @@ Al final se obtiene la información estructurada en el archivo `output.json`:
         "Frutas",
         "Verduras",
         "Orgánicos y Superfoods"
+        ...
     ],
     ...
     etc
 }
 ```
 
-## Detalles del Challenge
+## Dockerfile
+Se instaló la aplicación de escritorio **Docker Desktop** descargando el instalador desde la página oficial de [Docker](https://www.docker.com/). Una vez instalado es necesario cerrar sesión para iniciar el programa.
+
+Posteriormente se elaboró el siguiente `Dockerfile` en la carpeta del proyecto:
+
+```bash
+# Imagen base de Python
+FROM python:3.10
+
+# Directorio del contenedor
+WORKDIR /app
+
+# Archivos necesarios para el contenedor
+COPY requirements.txt ./
+COPY webscraping.py ./
+
+# Instalacion de dependencias
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Ejecucion del script
+CMD ["python", "webscraping.py"]
+
+```
+
+Desde la linea de comandos se generó la imagen del contenedor con el siguiente comando, utilizando el parámetro `--tag, -t` para darle un nombre a la imagen (`scraping-challenge-1`).
+
+```bash
+docker build -t scraping-challenge-1 .
+```
+
+Una vez generada la imagen se corrió el contenedor desde la aplicación **Docker Desktop** y se obtuvo lo siguiente:
+
+
+Resultado de la linea de comandos
+![container-challenge-1A.png](container-challenge-1A.png)
+
+
+Archivo `output.json` generado
+![container-challenge-1A.png](container-challenge-1B.png)
+
+### Detalles del Dockerfile
+
+
+1. Al intentar generar la imagen a partir del `Dockerfile` me dio un error con los paquetes `pywin32` y `pywinpty` durante la instalación de las dependencias del `requirements.txt`. Ya que los contenedores `Docker` corren en un sistema `linux` ambos paquetes no son compatibles. [Docker Community Forums](https://forums.docker.com/t/dockerfile-error-run-pip-install-r-requirements-txt/128194), [Streamlit](https://discuss.streamlit.io/t/error-could-not-find-a-version-that-satisfies-the-requirement-pywin32-301-from-versions-none/15343)
+
+  ##### **Solución**:
+Eliminar de la lista de dependencias del `requirements.txt` las lineas `pywin32==306` y `pywinpty==2.0.10` y volver a ejecutar el comando `docker buil` mencionado anteriormente.
+
+2. Durante la instalación de las dependencias, algunos paquetes dieron error por incompatiblidad de con mi versión de `Python 3.11.3` y decía que tenía que ser con una versión `>= 3.7` o `< 3.11`.
+
+  ##### **Solución**:
+Cambiar la versión a instalar en el `Dockerfile`. En mi caso puse `FROM python:3.10` para instalar `Python 3.10` en la imagen.
