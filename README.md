@@ -154,12 +154,12 @@ Archivo `output.json` generado
 ### Detalles del Dockerfile
 
 
-1. Al intentar generar la imagen a partir del `Dockerfile` me dio un error con los paquetes `pywin32` y `pywinpty` durante la instalación de las dependencias del `requirements.txt`. Ya que los contenedores `Docker` corren en un sistema `linux` ambos paquetes no son compatibles. [Docker Community Forums](https://forums.docker.com/t/dockerfile-error-run-pip-install-r-requirements-txt/128194), [Streamlit](https://discuss.streamlit.io/t/error-could-not-find-a-version-that-satisfies-the-requirement-pywin32-301-from-versions-none/15343)
+1. Al intentar generar la imagen a partir del `Dockerfile` me dio un error con los paquetes `pywin32` y `pywinpty` durante la instalación de las dependencias del `requirements.txt`. Ya que los contenedores `Docker` ya contienen python instalado y corren en un sistema `linux` ambos paquetes no son necesarios/compatibles. [Docker Community Forums](https://forums.docker.com/t/dockerfile-error-run-pip-install-r-requirements-txt/128194), [Streamlit](https://discuss.streamlit.io/t/error-could-not-find-a-version-that-satisfies-the-requirement-pywin32-301-from-versions-none/15343)
 
-  ##### **Solución**:
-Eliminar de la lista de dependencias del `requirements.txt` las lineas `pywin32==306` y `pywinpty==2.0.10` y volver a ejecutar el comando `docker buil` mencionado anteriormente.
+  #### **Solución**:
+  Eliminar de la lista de dependencias del `requirements.txt` las lineas `pywin32==306` y `pywinpty==2.0.10` y volver a ejecutar el comando `docker build` mencionado anteriormente.
 
-2. Durante la instalación de las dependencias, algunos paquetes dieron error por incompatiblidad de con mi versión de `Python 3.11.3` y decía que tenía que ser con una versión `>= 3.7` o `< 3.11`.
+2. Durante la instalación de las dependencias, algunos paquetes dieron error por incompatiblidad con mi versión de `Python 3.11.3` y decía que tenía que ser con una versión `>= 3.7` o `< 3.11`.
 
-  ##### **Solución**:
-Cambiar la versión a instalar en el `Dockerfile`. En mi caso puse `FROM python:3.10` para instalar `Python 3.10` en la imagen.
+  #### **Solución**:
+  Cambiar la versión a instalar en el `Dockerfile`. En mi caso puse `FROM python:3.10` para instalar `Python 3.10` en la imagen.
