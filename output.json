@@ -1,207 +1,261 @@
 {
-    "Abarrotes": [
-        "Café, té y sustitutos",
-        "Pan y Tortillas Empacados",
-        "Cereales y Barras",
-        "Galletas",
-        "Enlatados y Conservas",
-        "Leche",
-        "Azúcar y Postres",
-        "Mermeladas y Miel",
-        "Dulces y Chocolates",
-        "Botanas y Fruta Seca",
-        "Salsas, Aderezos y Vinagre",
-        "Pasta, purés y caldillos",
-        "Harina y Repostería",
-        "Saborizantes y Jarabes",
-        "Arroz, Frijol y Semillas",
-        "Sal, Especias y Sazonadores",
-        "Alimentos Instantáneos",
-        "Comida Oriental",
-        "Alimentos Saludables",
-        "Aceites de Cocina"
-    ],
-    "Lácteos": [
-        "Leche",
-        "Yogurt",
-        "Gelatinas y Postres",
-        "Mantequilla y margarina",
-        "Huevo",
-        "Crema",
-        "Quesos",
-        "Alimento Líquido",
-        "Quesos Gourmet"
-    ],
-    "Frutas y Verduras": [
-        "Frutas",
-        "Verduras",
-        "Orgánicos y Superfoods"
-    ],
-    "Carnes, Pescados y Mariscos": [
-        "Pollo y Pavo",
-        "Cerdo",
-        "Pescados y Mariscos",
-        "Res",
-        "Sushi"
-    ],
-    "Salchichonería": [
-        "Carnes frías",
-        "Artículos a granel",
-        "Empacados",
-        "Comida Preparada"
-    ],
-    "Panadería y Tortillería": [
-        "Pan Salado",
-        "Tortillería",
-        "Pan Dulce",
-        "Pasteles, Panqués y Postres",
-        "Pan para Hornear y Pasta Hojaldre",
-        "Especializados",
-        "Pan de Temporada"
-    ],
-    "Bebidas y Licores": [
-        "Cervezas",
-        "Coolers",
-        "Licores Digestivos",
-        "Licores",
-        "Vinos",
-        "Agua",
-        "Energizantes e Hidratantes",
-        "Café y Té Preparado",
-        "Jugos y Néctares",
-        "Polvos y Jarabes",
-        "Refrescos"
-    ],
-    "Congelados": [
-        "Comida Fácil",
-        "Frutas y Verduras Congeladas",
-        "Hielo",
-        "Postres Congelados"
-    ],
-    "Limpieza para el Hogar": [
-        "Accesorios para Limpieza",
-        "Desechables",
-        "Aromatizantes",
-        "Lavatrastes y lavavajillas",
-        "Limpieza del hogar",
-        "Papel higiénico",
-        "Desinfectantes",
-        "Insecticidas y Trampas"
-    ],
-    "Cuidado de la Ropa": [
-        "Cloro",
-        "Detergente",
-        "Pre-lavadores y quitamanchas para ropa",
-        "Suavizantes, Almidón y colorantes"
-    ],
-    "Mascotas": [
-        "Alimento para Perros",
-        "Arenas y Accesorios Gatos",
-        "Alimento y accesorios otras mascotas",
-        "Accesorios e Higiene Perros",
-        "Alimento para Gatos"
-    ],
-    "Bebés": [
-        "Pañales y toallitas húmedas para bebé",
-        "Juguetes para bebé y estimulación temprana",
-        "Higiene del bebé",
-        "Fórmula láctea",
-        "Leche de Crecimiento",
-        "Comida para bebé y lactancia",
-        "Artículos para fiesta",
-        "Ropa para bebé",
-        "Cunas, carriolas y accesorios"
-    ],
-    "Farmacia": [
-        "Vitaminas y Suplementos",
-        "Cuidado Personal",
-        "Estomacales",
-        "Material de Curación",
-        "Incontinencia",
-        "Analgésicos",
-        "Bienestar Sexual",
-        "Medicamentos Genéricos",
-        "Medicamentos de Patente",
-        "Respiratorios",
-        "Oftálmicos y Oticos",
-        "Medicamentos de Alta Especialidad",
-        "Ortopedia y Equipos de Medición",
-        "Dieta",
-        "Naturistas y Herbolarios",
-        "Nutrición Deportiva",
-        "Cuidado de los Pies",
-        "Diabetes",
-        "Medicamentos Infantiles",
-        "Membresías de la Salud"
-    ],
-    "Higiene y Belleza": [
-        "Afeitado y Depilación",
-        "Cuidado bucal",
-        "Cuidado Facial",
-        "Cosméticos",
-        "Cuidado del cabello",
-        "Higiene y cuidado corporal",
-        "Higiene y cuidado para manos",
-        "Cuidado para pies",
-        "Pañuelos desechables",
-        "Cuidado femenino",
-        "Kits de viaje",
-        "Higiene masculina",
-        "Accesorios de Moda",
-        "Desmaquillantes y quitaesmaltes",
-        "Productos destacados",
-        "Crema corporal y de manos",
-        "Desodorante para Hombre y Mujer"
-    ],
-    "Electrónica": [
-        "Televisores",
-        "Telefonía",
-        "Computación",
-        "Videojuegos",
-        "Audio",
-        "Fotografía"
-    ],
-    "Artículos para el Hogar y autos": [
-        "Accesorios para cocina",
-        "Accesorios para mesa",
-        "Artículos de temporada",
-        "Artículos deportivos",
-        "Colchones y Blancos",
-        "Decoración y Muebles",
-        "Ferretería y Pinturas",
-        "Jardineria y exteriores",
-        "Línea Blanca",
-        "Organización y Almacenamiento",
-        "Papelería",
-        "Electrodomésticos",
-        "Libros y Revistas",
-        "Autos y Motos"
-    ],
-    "Ropa y Zapatería": [
-        "Ropa para Hombre",
-        "Ropa para Mujer",
-        "Ropa para Niña y Juvenil",
-        "Ropa para Niño y Juvenil",
-        "Zapatería",
-        "Ropa para Bebé"
-    ],
-    "Juguetería y Deportes": [
-        "Juguetes para bebé y estimulación temprana",
-        "Muñecas y Accesorios",
-        "Figuras de Acción",
-        "Juegos de Mesa y Rompecabezas",
-        "Peluches y Electrónicos",
-        "Lanzadores",
-        "Triciclos y Montables",
-        "Aparatos de Ejercicio y Fitness",
-        "Campismo",
-        "Deportes Acuáticos",
-        "Deportes Individuales y en Equipo",
-        "Juegos Recreativos",
-        "Bicicletas",
-        "Juegos para Exterior y Albercas",
-        "Juegos de Ciencia y Creatividad",
-        "Vehículos y Autopistas",
-        "Juguetes de Construcción"
-    ]
+    "Abarrotes": {
+        "url": "https://super.walmart.com.mx/content/abarrotes/cafe-te-y-sustitutos/120005_120070",
+        "Productos": [
+            "Café, té y sustitutos",
+            "Pan y Tortillas Empacados",
+            "Cereales y Barras",
+            "Galletas",
+            "Enlatados y Conservas",
+            "Leche",
+            "Azúcar y Postres",
+            "Mermeladas y Miel",
+            "Dulces y Chocolates",
+            "Botanas y Fruta Seca",
+            "Salsas, Aderezos y Vinagre",
+            "Pasta, purés y caldillos",
+            "Harina y Repostería",
+            "Saborizantes y Jarabes",
+            "Arroz, Frijol y Semillas",
+            "Sal, Especias y Sazonadores",
+            "Alimentos Instantáneos",
+            "Comida Oriental",
+            "Alimentos Saludables",
+            "Aceites de Cocina"
+        ]
+    },
+    "Lácteos": {
+        "url": "https://super.walmart.com.mx/content/lacteos/leche/120006_120096",
+        "Productos": [
+            "Leche",
+            "Yogurt",
+            "Gelatinas y Postres",
+            "Mantequilla y margarina",
+            "Huevo",
+            "Crema",
+            "Quesos",
+            "Alimento Líquido",
+            "Quesos Gourmet"
+        ]
+    },
+    "Frutas y Verduras": {
+        "url": "https://super.walmart.com.mx/content/frutas-y-verduras/frutas/120007_120046",
+        "Productos": [
+            "Frutas",
+            "Verduras",
+            "Orgánicos y Superfoods"
+        ]
+    },
+    "Carnes, Pescados y Mariscos": {
+        "url": "https://super.walmart.com.mx/content/carnes-pescados-y-mariscos/pollo-y-pavo/120008_120040",
+        "Productos": [
+            "Pollo y Pavo",
+            "Cerdo",
+            "Pescados y Mariscos",
+            "Res",
+            "Sushi"
+        ]
+    },
+    "Salchichonería": {
+        "url": "https://super.walmart.com.mx/content/salchichoneria/carnes-frias/120009_120104",
+        "Productos": [
+            "Carnes frías",
+            "Artículos a granel",
+            "Empacados",
+            "Comida Preparada"
+        ]
+    },
+    "Panadería y Tortillería": {
+        "url": "https://super.walmart.com.mx/content/panaderia-y-tortilleria/pan-salado/120010_2340027",
+        "Productos": [
+            "Pan Salado",
+            "Tortillería",
+            "Pan Dulce",
+            "Pasteles, Panqués y Postres",
+            "Pan para Hornear y Pasta Hojaldre",
+            "Especializados",
+            "Pan de Temporada"
+        ]
+    },
+    "Bebidas y Licores": {
+        "url": "https://super.walmart.com.mx/content/bebidas-y-licores/cervezas/3680051_120094",
+        "Productos": [
+            "Cervezas",
+            "Coolers",
+            "Licores Digestivos",
+            "Licores",
+            "Vinos",
+            "Agua",
+            "Energizantes e Hidratantes",
+            "Café y Té Preparado",
+            "Jugos y Néctares",
+            "Polvos y Jarabes",
+            "Refrescos"
+        ]
+    },
+    "Congelados": {
+        "url": "https://super.walmart.com.mx/content/congelados/comida-facil/120013_120057",
+        "Productos": [
+            "Comida Fácil",
+            "Frutas y Verduras Congeladas",
+            "Hielo",
+            "Postres Congelados"
+        ]
+    },
+    "Limpieza para el Hogar": {
+        "url": "https://super.walmart.com.mx/content/limpieza-para-el-hogar/accesorios-para-limpieza/3680090_1950046",
+        "Productos": [
+            "Accesorios para Limpieza",
+            "Desechables",
+            "Aromatizantes",
+            "Lavatrastes y lavavajillas",
+            "Limpieza del hogar",
+            "Papel higiénico",
+            "Desinfectantes",
+            "Insecticidas y Trampas"
+        ]
+    },
+    "Cuidado de la Ropa": {
+        "url": "https://super.walmart.com.mx/content/cuidado-de-la-ropa/cloro/3680083_3570063",
+        "Productos": [
+            "Cloro",
+            "Detergente",
+            "Pre-lavadores y quitamanchas para ropa",
+            "Suavizantes, Almidón y colorantes"
+        ]
+    },
+    "Mascotas": {
+        "url": "https://super.walmart.com.mx/content/mascotas/alimento-para-perros/3680079_3680080",
+        "Productos": [
+            "Alimento para Perros",
+            "Arenas y Accesorios Gatos",
+            "Alimento y accesorios otras mascotas",
+            "Accesorios e Higiene Perros",
+            "Alimento para Gatos"
+        ]
+    },
+    "Bebés": {
+        "url": "https://super.walmart.com.mx/content/bebes/panales-y-toallitas-humedas-para-bebe/120015_120038",
+        "Productos": [
+            "Pañales y toallitas húmedas para bebé",
+            "Juguetes para bebé y estimulación temprana",
+            "Higiene del bebé",
+            "Fórmula láctea",
+            "Leche de Crecimiento",
+            "Comida para bebé y lactancia",
+            "Artículos para fiesta",
+            "Ropa para bebé",
+            "Cunas, carriolas y accesorios"
+        ]
+    },
+    "Farmacia": {
+        "url": "https://super.walmart.com.mx/content/farmacia/vitaminas-y-suplementos/120016_120089",
+        "Productos": [
+            "Vitaminas y Suplementos",
+            "Cuidado Personal",
+            "Estomacales",
+            "Material de Curación",
+            "Incontinencia",
+            "Analgésicos",
+            "Bienestar Sexual",
+            "Medicamentos Genéricos",
+            "Medicamentos de Patente",
+            "Respiratorios",
+            "Oftálmicos y Oticos",
+            "Medicamentos de Alta Especialidad",
+            "Ortopedia y Equipos de Medición",
+            "Dieta",
+            "Naturistas y Herbolarios",
+            "Nutrición Deportiva",
+            "Cuidado de los Pies",
+            "Diabetes",
+            "Medicamentos Infantiles",
+            "Membresías de la Salud"
+        ]
+    },
+    "Higiene y Belleza": {
+        "url": "https://super.walmart.com.mx/content/higiene-y-belleza/afeitado/120017_690053",
+        "Productos": [
+            "Afeitado y Depilación",
+            "Cuidado bucal",
+            "Cuidado Facial",
+            "Cosméticos",
+            "Cuidado del cabello",
+            "Higiene y cuidado corporal",
+            "Higiene y cuidado para manos",
+            "Cuidado para pies",
+            "Pañuelos desechables",
+            "Cuidado femenino",
+            "Kits de viaje",
+            "Higiene masculina",
+            "Accesorios de Moda",
+            "Desmaquillantes y quitaesmaltes",
+            "Productos destacados",
+            "Crema corporal y de manos",
+            "Desodorante para Hombre y Mujer"
+        ]
+    },
+    "Electrónica": {
+        "url": "https://super.walmart.com.mx/content/electronica/televisores/2910049_3200009",
+        "Productos": [
+            "Televisores",
+            "Telefonía",
+            "Computación",
+            "Videojuegos",
+            "Audio",
+            "Fotografía"
+        ]
+    },
+    "Artículos para el Hogar y autos": {
+        "url": "https://super.walmart.com.mx/content/articulos-para-el-hogar-y-autos/accesorios-para-cocina/3450016_3450017",
+        "Productos": [
+            "Accesorios para cocina",
+            "Accesorios para mesa",
+            "Artículos de temporada",
+            "Artículos deportivos",
+            "Colchones y Blancos",
+            "Decoración y Muebles",
+            "Ferretería y Pinturas",
+            "Jardineria y exteriores",
+            "Línea Blanca",
+            "Organización y Almacenamiento",
+            "Papelería",
+            "Electrodomésticos",
+            "Libros y Revistas",
+            "Autos y Motos"
+        ]
+    },
+    "Ropa y Zapatería": {
+        "url": "https://super.walmart.com.mx/content/ropa-y-zapateria/ropa-para-hombre/3510074_3510075",
+        "Productos": [
+            "Ropa para Hombre",
+            "Ropa para Mujer",
+            "Ropa para Niña y Juvenil",
+            "Ropa para Niño y Juvenil",
+            "Zapatería",
+            "Ropa para Bebé"
+        ]
+    },
+    "Juguetería y Deportes": {
+        "url": "https://super.walmart.com.mx/content/jugueteria-y-deportes/juguetes-para-bebe-y-estimulacion-temprana/3710018_3480054",
+        "Productos": [
+            "Juguetes para bebé y estimulación temprana",
+            "Muñecas y Accesorios",
+            "Figuras de Acción",
+            "Juegos de Mesa y Rompecabezas",
+            "Peluches y Electrónicos",
+            "Lanzadores",
+            "Triciclos y Montables",
+            "Aparatos de Ejercicio y Fitness",
+            "Campismo",
+            "Deportes Acuáticos",
+            "Deportes Individuales y en Equipo",
+            "Juegos Recreativos",
+            "Bicicletas",
+            "Juegos para Exterior y Albercas",
+            "Juegos de Ciencia y Creatividad",
+            "Vehículos y Autopistas",
+            "Juguetes de Construcción"
+        ]
+    }
 }

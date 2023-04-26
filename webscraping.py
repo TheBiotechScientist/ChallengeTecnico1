@@ -14,13 +14,14 @@ import json
 import pandas as pd
 
 # Asiganmos la url del sitio
-url = 'https://super.walmart.com.mx/all-departments'
+url = 'https://super.walmart.com.mx/'
+url_all = 'https://super.walmart.com.mx/all-departments'
 
 # Agregamos la información adicional de headers para obtener acceso al sitio
 header = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299'}
 
 # Hacemos la petición
-response = requests.get(url, headers=header)
+response = requests.get(url_all, headers=header)
 
 # Obtenemos el contenido html
 soup = bs(response.text, 'html.parser')
@@ -36,7 +37,8 @@ for div in divs:
     ul = div.find('ul', {'class': 'pt2 pl0 list'})
     lis = ul.find_all('li', {'class': 'pv1 pv0-m'})
     lis_text = [li.text.strip() for li in lis]
-    result[h2] = lis_text
+    href = ul.find('a').get('href')
+    result[h2] = {'url': url+href, 'Productos': lis_text}
 
 # Opcional para ver en Jupyter Notebook
 # df = pd.DataFrame.from_dict(result, orient='index').transpose()
